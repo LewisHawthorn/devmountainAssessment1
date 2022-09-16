@@ -1,0 +1,11 @@
+var password = 'passtordy666'
+if (password.length <10 && !/\d/.test(password) && !/[a-zA-Z]/.test(password))
+console.log("Passwords must contain atleast 10 characters including a number and a letter")
+else if (password.length <10)
+console.log("Passwords must contain atleast 10 characters")
+else if (!/\d/.test(password) || !/[a-zA-Z]/.test(password))
+console.log("Passwords must include a letter and a letter")
+else if (!/[a-z]/.test(password) || !/[A-Z]/.test(password))
+console.log("Passwords must contain both uppercase and lowercase letters")
+else if (password.includes("password"))
+console.log(`Passwords may not contain "password"`)
